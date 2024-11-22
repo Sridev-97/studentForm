@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+</head>
+
+<body>
+
+    <!DOCTYPE html>
+    <html>
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+
+        #btn {
+            width: 100%;
+            background-color: chocolate;
+            color: azure;
+            font-weight: 600;
+
+        }
+    </style>
+    <div style="justify-items: center;">
+        <form id="student-details">
+            <h1>STUDENT FORM</h1>
+            <table border="2">
+                <tr>
+                    <th>Name</th>
+                    <td><input type="text" required id="name"></td>
+                </tr>
+                <tr>
+                    <th>Age</th>
+                    <td><input type="text" id="age" required></td>
+                </tr>
+                <tr>
+                    <th>Gender</th>
+                    <td>
+                        <input type="radio" name="gender" id="male" value="Male" required>Male
+                        <input type="radio" name="gender" id="female" value="Female" required>Female
+                    </td>
+                </tr>
+                <tr>
+                    <th>Course</th>
+                    <td>
+                        <select style="width: 178px" id="course">
+                            <option value="">Select a course</option>
+                            <option>Javascript</option>
+                            <option>Java</option>
+                            <option>HTML</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td><input type="email" id="email" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="submit" id="btn">Save</button></td>
+                </tr>
+            </table>
+        </form>
+        <br><br>
+        <table border="2" id="tab2" style="text-align: center;">
+            <thead>
+                <tr>
+                    <th>NAME</th>
+                    <th>AGE</th>
+                    <th>GENDER</th>
+                    <th>COURSE</th>
+                    <th>EMAIL</th>
+                    <th>ACTION</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+
+        </table>
+    </div>
+    <script src="script.js"> </script>
+
+    </html>
+
+</body>
+
+</html>
